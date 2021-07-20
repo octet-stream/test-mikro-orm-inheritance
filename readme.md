@@ -5,9 +5,9 @@
 
 ### What's the issue?
 
-Run the `npm dev` script first, it should run sucessfully. It is using simple inheritance: `BaseEntity` => `File`
+1. Run the `npm dev` script first, it should run sucessfully. It is using simple inheritance: `BaseEntity` => `File`
 
-But the `npm dev-with-dates` will fail with the following error:
+2. But the `npm dev-with-dates` script will fail with the following error:
 
 ```
 MetadataError: Metadata for entity BaseEntity not found
