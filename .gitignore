@@ -1,0 +1,4 @@
+.SD_Store
+node_modules
+lib
+.env
