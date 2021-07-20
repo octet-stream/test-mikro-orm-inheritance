@@ -13,8 +13,7 @@ import {FileWithDates} from "./entity/FileWithDates"
     dbName: "test-mikro-orm-inheritance",
     metadataProvider: TsMorphMetadataProvider,
     entities: [FileWithDates],
-    debug: true,
-    tsNode: true
+    debug: true
   })
 
   console.log(orm)
