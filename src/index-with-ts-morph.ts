@@ -1,8 +1,9 @@
 import "reflect-metadata"
 
 import {MikroORM} from "@mikro-orm/core"
+import {TsMorphMetadataProvider} from "@mikro-orm/reflection"
 
-import {File} from "./entity/File"
+import {FileWithDates} from "./entity/FileWithDates"
 
 (async () => {
   const orm = await MikroORM.init({
@@ -10,7 +11,8 @@ import {File} from "./entity/File"
     user: "root",
     password: process.env.DB_USER_PASSWORD || undefined,
     dbName: "test-mikro-orm-inheritance",
-    entities: [File],
+    metadataProvider: TsMorphMetadataProvider,
+    entities: [FileWithDates],
     debug: true,
     tsNode: true
   })
@@ -19,3 +21,4 @@ import {File} from "./entity/File"
 
   await orm.close()
 })()
+

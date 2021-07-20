@@ -2,23 +2,24 @@
   "name": "test-mikro-orm-inheritance",
   "version": "0.0.0",
   "main": "lib/index.js",
-  "type": "module",
   "scripts": {
     "build": "tsc",
-    "dev": "node --loader ts-node/esm src/index.ts",
-    "dev-with-dates": "node --loader ts-node/esm src/index-with-dates.ts"
+    "dev": "ts-node src/index.ts",
+    "dev-with-dates": "ts-node src/index-with-dates.ts",
+    "dev-with-ts-morph": "ts-node src/index-with-ts-morph.ts"
   },
   "author": "Nick K.",
   "license": "MIT",
   "devDependencies": {
-    "@mikro-orm/core": "^4.5.7",
-    "@mikro-orm/mysql": "^4.5.7",
     "@types/node": "^16.3.3",
-    "reflect-metadata": "^0.1.13",
     "ts-node": "^10.1.0",
     "typescript": "^4.3.5"
   },
   "dependencies": {
-    "dotenv": "^10.0.0"
+    "@mikro-orm/core": "^4.5.7",
+    "@mikro-orm/mysql": "^4.5.7",
+    "@mikro-orm/reflection": "^4.5.7",
+    "dotenv": "^10.0.0",
+    "reflect-metadata": "^0.1.13"
   }
 }

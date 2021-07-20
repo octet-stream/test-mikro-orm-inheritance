@@ -1,6 +1,6 @@
 import {Entity, Property} from "@mikro-orm/core"
 
-import {BaseEntityWithDates} from "./abstract/BaseEntityWithDates.js"
+import {BaseEntityWithDates} from "./abstract/BaseEntityWithDates"
 
 @Entity()
 export class FileWithDates extends BaseEntityWithDates {
