@@ -14,3 +14,5 @@ MetadataError: Metadata for entity BaseEntity not found
 ```
 
 In this example I'm using another abstract class in between `File` and `BaseEntity`, so the full inheritance looks like this: `BaseEntity` => `BaseEntityWithDates` => `FileWithDates`
+
+3. You can also try `npm dev-with-ts-morph` script. It will fail with same error as `npm dev-with-dates`.
